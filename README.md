@@ -1,49 +1,115 @@
-# java-assign-4
+# City Library Digital Management System
+A Java-based application designed to digitize the operations of the City Central Library. This system manages books, members, issue/return transactions, and uses File Handling + Java Collections Framework for efficient data storage and retrieval.
+
+# Project Overview
+The goal of this project is to create a simple, menu-driven Library Management System that:
+
+Stores books and members using HashMap
 
 
-# City Library Digital Management System (Java)
+Handles issuing and returning of books
 
 
-# Description
+Saves data persistently using text files
 
 
-A console-based Java application that manages library records including books, members, and book transactions.
-The system uses File Handling for data storage and the Java Collections Framework for efficient searching, sorting, and management of records.
+
+Uses Comparable and Comparator for sorting
+
+
+
+Uses Buffered I/O + Character Streams for fast file operations
+
+
 
 # Features
+Book Management
 
 
-Uses FileReader, FileWriter, BufferedReader, BufferedWriter for file handling.
-
-
-
-Stores book data in books.txt and member data in members.txt.
+Add new books
 
 
 
-Implements List, Set, Map for managing issued books, categories, books, and members.
+Store book details (ID, title, author, category, issued status)
 
 
 
-Uses Comparable (sort by title) and Comparator (sort by author/category).
+Search books by title, author, or category
+
+
+
+Sort books by title (Comparable)
+
+
+
+# Member Management
+
+
+Add members
+
+
+
+Store member details (ID, name, email)
 
 
 
 
-Supports adding books and members.
+Maintain list of issued books for each member
 
 
 
-Allows issuing and returning books with proper validation.
+# Transaction Handling
+
+
+Issue a book to a member
+
+
+Return a book
 
 
 
-Provides search functionality (title, author, category).
+Update records in both book & member collections
 
 
 
-Loads data from files on startup and saves updates before exit.
+# File Handling
 
 
 
-Includes input validation and exception handling.
+
+Books stored in books.txt
+
+
+
+
+Members stored in members.txt
+
+
+
+Files auto-created if missing
+
+
+
+BufferedReader/BufferedWriter used for efficient I/O
+
+
+
+# Technologies Used
+
+
+Java 8+
+
+File Handling (Text Files)
+
+
+
+Java Collections Framework
+
+
+
+
+HashMap
+ArrayList
+Comparable / Comparator
+
+BufferedReader / BufferedWriter
